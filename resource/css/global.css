@@ -1,0 +1,265 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+ v2.0 | 20110126
+ License: none (public domain)
+ */
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html{
+	min-width:100%;
+	min-height: 100%;
+}
+body
+{
+	min-width:100%;
+	min-height: 100%;
+	overflow:auto;
+	background-color: #e4e4e4;
+	font-family: 'Raleway', sans-serif;
+	
+}
+.hide
+{
+	visibility: hidden;
+}
+.wrapper
+{
+	background-color:#FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+	width:1000px;
+	min-height: 100%;
+	padding-bottom: 50px;
+}
+.logo
+{
+	margin-left: 20px;
+}
+.leftContent, .rightContent
+{
+	float: left;
+}
+.leftContent
+{
+	margin-right: 40px;
+}
+.leftContent .title
+{
+	font-size: 24px;
+	padding: 20px;
+	font-weight: bold;
+	margin-left: 20px;
+}
+.leftContent  #thumbHolder
+{
+	width:400px;
+	height:400px;
+	overflow: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.rightContent .greybox
+{
+	width:437px;
+	background-color: #cccccc;
+	padding: 20px;
+	margin-top: 64px;
+	min-height: 246px;
+}
+.rightContent .greybox .title
+{
+	font-size: 18px;
+	font-weight: bold;
+}
+.rightContent .greybox  .holder
+{
+	margin-top:20px;
+}
+#rightThumbHolder
+{
+	width:200px;
+	height:150px;
+	background-color: #333;
+	overflow:hidden;
+	float: left;
+	cursor: pointer;
+}
+#rightThumb
+{
+	width:200px;
+	margin-top: 5px;
+	display: none;
+	
+}
+#rightColors
+{
+	float: left;
+	margin-left: 20px;
+	cursor: pointer;
+}
+#rightColors .color
+{
+	width:30px;
+	height:30px;
+	border:1px solid #fff;
+	margin-bottom: 10px;
+}
+#next1
+{
+	float: right;
+}
+.button
+{
+	padding: 20px 30px 20px 30px;
+	background-color: #BDD61B;
+	width:auto;
+	display: inline-block;
+	margin-top: 50px;
+	
+	cursor:pointer;
+	color: #fff;
+}
+
+.button:hover
+{
+	background-color: #A2D506;
+}
+.leftThumb
+{
+	width:300px;
+	height: 210px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.clearBoth
+{
+	clear: both;
+}
+#left2
+{
+	display: none;
+}
+#right2
+{
+	display: none;
+}
+#pageHolder
+{
+	width:150px;
+	height:700px;
+	overflow: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#pageHolder .page
+{
+	padding-left:50px;
+	text-align: left;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+#pageHolder .page:hover
+{
+	color:#A2D506;
+}
+.rightContent #right2  .greybox
+{
+	width:600px;
+}
+.rightContent #right2  .greybox .formItem li
+{
+	margin-bottom: 10px;
+}
+.rightContent #right2  .greybox .formItem .title
+{
+	margin-right: 20px;
+	margin-top: 5px;
+	width:80px;
+}
+.rightContent #right2  .greybox .formItem .textInput
+{
+	width:480px;
+	height:30px;
+}
+.floatLeft
+{
+	float:left;
+}
+.rightContent #right2  .greybox .formItem  .areaInput
+{
+	width:480px;
+	height:200px;
+}
+.nextLi
+{
+	text-align: right;
+}
+.nav
+{
+	width:640px;
+}
+.nav li
+{
+	width:50%;
+}
+#backout
+{
+	min-width:100%;
+	min-height:100%;
+	background-color: #000;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=70);
+	-moz-opacity:0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+	position: absolute;
+	top:0;
+	display: none;
+}
+#messageHolder{
+	position:absolute;
+	width:400px;
+	left:50%;
+	margin-left:-200px;
+	top:25%;
+	min-height:50px;
+	background-color: #fff; 
+	text-align: center;
+	display: none;
+}
+#message
+{
+	padding:20px;
+	text-align: center;
+	font-weight: bold;
+}

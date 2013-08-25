@@ -1,0 +1,23 @@
+{
+	"userId": "",
+	"template": {
+		"index": 0,
+		"colorIndex": "1"
+	},
+	"content": {
+		"home": {
+			"mainTitle": {
+				"value": "fg",
+				"type": "text"
+			},
+			"mainBody": {
+				"value": "fgfgfg",
+				"type": "textarea"
+			},
+			"mainImage": {
+				"value": "",
+				"type": "file"
+			}
+		}
+	}
+} 
