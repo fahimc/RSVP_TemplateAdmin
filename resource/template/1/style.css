@@ -1,0 +1,187 @@
+@import url(http://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+*
+{
+	padding:0;
+	margin:0;
+}
+body
+{
+	width:100%;
+	min-height: 100%;
+	background: url(images/bg.png) repeat;
+	font-family: 'Open Sans', sans-serif;
+}
+.header
+{
+	min-width:1000px;
+	width:100%;
+	height:132px;
+	background: url(images/headerbg.png) repeat-x;
+}
+.namesHolder
+{
+	width:1000px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	z-index: 2;
+	position: relative;
+	padding-top: 20px;
+
+}
+#names
+{
+		font-family: 'Old Standard TT', serif;
+	color: #fff;
+	font-weight: 700;
+	 font-style: italic;
+	 font-size: 40px;
+}
+#mainTitle
+{
+	color: #fff;
+	margin-top: -10px;
+}
+.nav
+{
+	width:100%;
+	height:49px;
+	background: url(images/navbg.png) repeat-x;
+	
+}
+.navHolder
+{
+	width:1000px;
+	margin-left: auto;
+	margin-right: auto;
+	height:39px;
+	padding-top: 10px;
+	
+}
+.navItems div
+{
+	color:#fff;
+	float: left;
+	border-right: 2px solid #fff;
+	padding-right: 10px;
+	padding-left: 10px;
+	cursor: pointer;
+	display: none;
+}
+.navItems
+{
+	width:292px;
+	margin-left: auto;
+	margin-right: auto;
+	height:39px;
+}
+.nav .navHolder .navItems .last
+{
+	border-right:0px;
+}
+.navItems .disabled
+{
+	/*display: none;*/
+}
+.glow
+{
+	position: absolute;
+	width:inherit;
+	height: inherit;
+	background: url(images/glow.png) no-repeat center;
+	z-index: 1;
+}
+.footer
+{
+	background-color: #1d0610;
+	width:100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: fixed;
+	bottom: 0;
+}
+
+.contentHolder
+{
+	width:1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+	min-height: 100%;
+}
+.contentHolder .content.selected
+{
+	display: block;
+}
+.contentHolder .content.disabled
+{
+	display: none;
+}
+#mainImage
+{
+	margin-left: 37px;
+	padding-top: 20px;
+	
+	width:926px;
+}
+.welcomeHolder, .venueHolder,.contactHolder,.galleryHolder
+{
+	
+	background-color: #650a33;
+	width:926px;
+	margin-left: 37px;
+	margin-top: 20px;
+	-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+padding-bottom: 20px;
+
+}
+.venueHolder, .contactHolder
+{
+	margin-top: 60px;
+	min-height: 350px;
+}
+#homeTitle,#venueTitle,#contactTitle
+{
+	margin-left: 20px;
+	color: #fff;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+#contactAddress
+{
+	margin-left: 20px;
+	color: #fff;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+#mainBody,#venueBody
+{
+	margin-left: 20px;
+	margin-right: 20px;
+	color: #fff;
+}
+#googleMap
+{
+	width:885px;
+	height: 500px;
+	background-color: #fff;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#venueImage
+{
+	width:886px;
+	margin-left: 20px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+#galleryContent img
+{
+	width: 886px;
+	margin-left: 20px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}

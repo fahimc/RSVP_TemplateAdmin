@@ -1,0 +1,11 @@
+.logoutHolder
+{
+	position: absolute;
+	right:20px;
+	top:20px
+}
+.logoutHolder a
+{
+	font-size: 11px;
+	color:#A2D506;
+}

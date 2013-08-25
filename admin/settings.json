@@ -1,0 +1,108 @@
+{
+	"template": [
+		{
+			"thumb": "resource/image/thumb/1.png",
+			"color": ["#2d2530", "#E01B6A", "#1B8EE0", "#E04C1B"]
+		}, {
+			"thumb": "resource/image/thumb/2.png",
+			"color": ["#E01B6A", "#1B8EE0", "#E04C1B"]
+		}, {
+			"thumb": "resource/image/thumb/1.png",
+			"color": ["#1B8EE0", "#2d2530", "#E01B6A"]
+		}, {
+			"thumb": "resource/image/thumb/2.png",
+			"color": ["#E04C1B", "#E01B6A", "#1B8EE0"]
+		}
+	],
+	"page": [
+		{
+
+			"type": "main",
+			"name": "Setup",
+			"form": [
+				{
+					"type": "text",
+					"id": "names",
+					"name": "Header Title:"
+				}, {
+					// types can be text, textarea, file (can have an additional property called filetypes as an array)
+					"type": "text",
+					"id": "mainTitle",
+					"name": "subTitle:"
+				}
+			]
+		}, {
+
+			"type": "home",
+			"name": "Home",
+			"form": [
+				{
+					// types can be text, textarea, file (can have an additional property called filetypes as an array)
+					"type": "text",
+					"id": "homeTitle",
+					"name": "Title:"
+				}, {
+					"type": "textarea",
+					"id": "mainBody",
+					"name": "Body:"
+				}, {
+					"type": "file",
+					"id": "mainImage",
+					"name": "Image"
+				}
+			]
+		}, {
+			"type": "gallery",
+			"name": "Gallery",
+			"form": [
+
+				{
+					"type": "file",
+					"id": "galleryItem1",
+					"name": "Image"
+				}, {
+					"type": "file",
+					"id": "galleryItem2",
+					"name": "Image"
+				}, {
+					"type": "file",
+					"id": "galleryItem3",
+					"name": "Image"
+				}
+			]
+		}, {
+			"type": "venue",
+			"name": "Venue",
+			"form": [
+				{
+					// types can be text, textarea, file (can have an additional property called filetypes as an array)
+					"type": "text",
+					"id": "venueTitle",
+					"name": "Title:"
+				}, {
+					"type": "textarea",
+					"id": "venueBody",
+					"name": "Body:"
+				}, {
+					"type": "file",
+					"id": "venueImage",
+					"name": "Image"
+				}
+			]
+		}, {
+			"type": "contact",
+			"name": "Contact",
+			"form": [
+				{
+					"type": "textarea",
+					"id": "contactAddress",
+					"name": "Address:"
+				}, {
+					"type": "text",
+					"id": "googleMap",
+					"name": "Google Map:"
+				}
+			]
+		}
+	]
+}

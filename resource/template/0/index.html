@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>index</title>
+		<meta name="author" content="fahim.chowdhury" />
+		<!-- Date: 2013-02-19 -->
+		<script type="text/javascript" src="main.js"></script>
+		<link type="text/css" rel="stylesheet"  href="style.css"/>
+	</head>
+	<body class="hide">
+		<ul class="wrapper">
+			<li class="leftHolder">
+				<h1 class="names"><span id="groomName">Name</span>&
+				<br>
+				<span id="brideName">Name</span></h1>
+				<p id="mainTitle">
+					main title
+				</p>
+				<img id="mainImage" src="resource/image/main.jpg" />
+				<ul class="menu">
+					<li id="homeButton" class="menuButton selected" onclick="changePage('homeContent',this)">
+						<p >
+							Home
+						</p>
+					</li>
+					<li id="galleryButton"  class="menuButton" onclick="changePage('galleryContent',this)">
+						<p >
+							Gallery
+						</p>
+					</li>
+					<li id="venueButton" class="menuButton" onclick="changePage('venueContent',this)">
+						<p  >
+							Venues
+						</p>
+					</li>
+					<li id="contactButton" class="menuButton" onclick="changePage('contactContent',this)">
+						<p  >
+							Contact
+						</p>
+					</li>
+					<li class="clearBoth"></li>
+				</ul>
+			</li>
+			<li class="rightHolder">
+				<ul class="contentHolder">
+					<li class="content selected" id="homeContent">
+						<h1 class="contentTitle" id="homeTitle"> Welcome </h1>
+						<p id="mainBody">
+							</p>
+					</li>
+					<li class="content disabled" id="galleryContent">
+						<h1 class="contentTitle" id="galleryTitle">Gallery</h1>
+
+					</li>
+					<li class="content disabled" id="venueContent">
+						<h1 class="contentTitle" id="venueTitle">Venue</h1>
+
+					</li>
+					<li class="content disabled" id="contactContent">
+						<h1 class="contentTitle" id="contactTitle">Contact</h1>
+						<div id="googleMap">
+							
+						</div>
+						
+						<p id="contactAddress">
+							London Borough of Tower Hamlets<br>London<br>E14 5AH
+						</p>
+						</li>
+				</ul>
+			</li>
+			<li class="clearBoth"></li>
+		</ul>
+	</body>
+</html>
+

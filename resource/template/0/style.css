@@ -1,0 +1,193 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+ v2.0 | 20110126
+ License: none (public domain)
+ */
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville);
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html{
+	width:100%;
+	height: 100%;
+}
+body
+{
+	width:100%;
+	height: 100%;
+	background-color: #2d2530;
+	overflow:auto;
+}
+.hide
+{
+	visibility: hidden;
+}
+.wrapper
+{
+	margin-left: auto;
+	margin-right: auto;
+	width:1000px;
+	height: 100%;
+}
+.leftHolder,.rightHolder
+{
+	float: left;
+	height: 100%;
+}
+.rightHolder
+{
+	margin-left: 70px;
+	overflow: hidden;
+}
+.clearBoth
+{
+	clear: both;
+}
+.names{
+	font-family: 'Libre Baskerville', serif;
+	color: #605969;
+	font-size: 65px;
+	line-height: 60px;
+	padding-top: 50px;
+}
+.names #groomName,#brideName
+{
+	color:#ffffff;
+}
+#mainTitle
+{
+	font-family: 'Libre Baskerville', serif;
+	color: #605969;
+	font-size: 14px;
+}
+#mainImage
+{
+	border: 10px solid #FFFFFF;
+	margin-top: 30px;
+	height:300px;
+	width:400px;
+}
+.contentTitle
+{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 40px;
+	color:#FFFFFF;
+	padding-left: 30px;
+	padding-top: 60px;
+}
+#mainBody
+{
+	color:#625b65;
+	font-size: 14px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	margin: 20px;
+	line-height: 120%;
+}
+.contentHolder
+{
+	height: 100%;
+	
+}
+.contentHolder .content
+{
+	width:440px;
+	height: 90%;
+	top:5%;
+	background-color: #201c25;
+	position: absolute;
+	overflow: auto;
+}
+.contentHolder .content.selected
+{
+	display: block;
+}
+.contentHolder .content.disabled
+{
+	display: none;
+}
+.menu
+{
+	width:500px;
+}
+.menu .menuButton
+{
+	float: left;
+	width:100px;
+	text-align: center;
+	background-color:  #201c25;
+	color:#FFFFFF;
+	font-size: 14px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	cursor: pointer;
+	margin-right: 5px;
+	display: none;
+}
+.menu .menuButton:hover
+{
+	background-color:  #605969;
+}
+.menu .menuButton p
+{
+	padding: 20px;
+}
+.menu .menuButton.selected
+{
+	background-color:  #e7346f;
+	
+}
+#googleMap
+{
+	width:400px;
+	height: 350px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+#contactAddress
+{
+	color:#FFFFFF;
+	font-size: 14px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	margin: 20px;
+}
+.backgroundColor0
+{
+	background-color:#2d2530;
+}
+.backgroundColor1
+{
+	background-color:#E01B6A;
+}
+.backgroundColor2
+{
+	background-color:#1B8EE0;
+}
+.backgroundColor3
+{
+	background-color:#E04C1B;
+}
