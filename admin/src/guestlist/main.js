@@ -16,21 +16,23 @@
 	}
 	
 	window.response=function(msg) {
+		
 		switch(Number(msg))
 		{
 			case -1:
-			updateError("invalid username or password");
+			updateError("Something went wrong. Please try again.");
 			break;
 			case -2:
-			updateError("invalid username or password");
+			updateError("Something went wrong. Please try again.");
 			break;
 			case 1:
-			 location.href =  "../../index.php";
+			// location.href =  "../../menu.php";
 			break;
 		}
 	}
 	 window.updateError=function(msg)
 	{
+		
 		document.getElementById("error").innerHTML=msg;
 	}
 	Main();

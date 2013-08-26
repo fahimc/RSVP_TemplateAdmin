@@ -32,8 +32,11 @@
 					<div id="galleryButton"   onclick="changePage('galleryContent',this)">
 						Gallery
 					</div>
-					<div id="contactButton" class="last" onclick="changePage('contactContent',this)">
+					<div id="contactButton"  onclick="changePage('contactContent',this)">
 						Contact
+					</div>
+					<div id="rsvpButton" class="last" onclick="changePage('rsvpContent',this)">
+						RSVP
 					</div>
 				</div>
 			</div>
@@ -83,9 +86,35 @@
 					</p>
 				</div>
 			</li>
+			<li class="content disabled" id="rsvpContent">
+				<div class="rsvpHolder">
+					<h1 class="contentTitle" id="rsvpTitle" >RSVP</h1>
+					
+					<div id="rsvpform1">
+						<p>
+							Provide to RSVP code from your invite.
+						</p>
+						<form method="post" action="admin/lib/php/rsvpseats.php" enctype="multipart/form-data" target="php" onsubmit="updateError('')">
+							<input type="text" name="rsvpcode" id="rsvpcode" />
+							<p id="error"></p>
+							<button type="submit">GET SEATS</button>
+						</form>
+					</div>
+					<div id="rsvpform2">
+						<form method="post" action="admin/lib/php/rsvpseats.php" enctype="multipart/form-data" target="php" onsubmit="updateError('')">
+						<p>Select the number of seats.</p>
+						<select id="rsvpDropdown" name="rsvpDropdown">
+							
+						</select>
+						<input type="hidden" name="rsvpcode" value="" />
+						<button type="submit">SUBMIT</button>
+						</form>
+					</div>
+				</div>
+			</li>
 		</ul>
-
-		<div class="footer"></div>
+		<iframe id="php" name="php"></iframe>
+		<div class="footer"><a href="http://www.rsvpexpert.com/" target="_blank"><img src="images/logo_small.png" /></a> </div>
 	</body>
 </html>
 
