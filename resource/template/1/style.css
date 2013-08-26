@@ -244,3 +244,12 @@ padding-bottom: 20px;
 	margin-right: auto;
 	text-align: center;
 }
+#rsvpthanks
+{
+	display: none;
+	color:#FFFFFF;
+}
+#php
+{
+	display: none;
+}

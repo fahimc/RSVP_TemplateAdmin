@@ -29,7 +29,10 @@ function init()
 	$reader = PHPExcel_IOFactory::createReader( 'Excel2007');
 	$excel = $reader->load($path);
  
-
+	//store filename
+	file_put_contents("guestlist/filename.txt",$path);
+	
+	
 	$worksheet =$excel->getActiveSheet();
 	
 
@@ -45,6 +48,10 @@ function init()
 		}
 		$worksheet->setCellValue('C'.$row->getRowIndex() , GUID() );
 	}
+	
+	$writer = PHPExcel_IOFactory::createWriter($excel, 'Excel2007');
+	$writer->save($path);
+	
 	$writer = PHPExcel_IOFactory::createWriter($excel, 'CSV');
 	$writer->save('../../resource/sitedata/data.csv');
 	 
@@ -57,7 +64,7 @@ function init()
 	$objWriter->save('php://output');
 	
 	//unlink($path);
-	
+	 callback("path:".$path);
 	exit;
 }
 

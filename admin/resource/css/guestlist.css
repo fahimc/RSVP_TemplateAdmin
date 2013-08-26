@@ -90,3 +90,11 @@ iframe
 	padding-top: 20px;
 	font-weight: bold;
 }
+#download
+{
+	margin-top: 20px;
+	padding: 10px;
+	background-color: #FFFFFF;
+	color: #650AFB;
+	display: none;
+}

@@ -35,7 +35,7 @@
 					<div id="contactButton"  onclick="changePage('contactContent',this)">
 						Contact
 					</div>
-					<div id="rsvpButton" class="last" onclick="changePage('rsvpContent',this)">
+					<div id="rsvpButton" class="last" onclick="changePage('rsvpContent',this);resetRSVP()">
 						RSVP
 					</div>
 				</div>
@@ -101,14 +101,18 @@
 						</form>
 					</div>
 					<div id="rsvpform2">
-						<form method="post" action="admin/lib/php/rsvpseats.php" enctype="multipart/form-data" target="php" onsubmit="updateError('')">
+						<form method="post" action="admin/lib/php/updateseats.php" enctype="multipart/form-data" target="php" onsubmit="updateCode()">
 						<p>Select the number of seats.</p>
 						<select id="rsvpDropdown" name="rsvpDropdown">
 							
 						</select>
-						<input type="hidden" name="rsvpcode" value="" />
+						<input type="hidden" id="rsvpcode2" name="rsvpcode2" value="" />
+						<input type="hidden" id="rsvpseats" name="rsvpseats" value="" />
 						<button type="submit">SUBMIT</button>
 						</form>
+					</div>
+					<div id="rsvpthanks">
+						<p>Thank you.</p>
 					</div>
 				</div>
 			</li>
